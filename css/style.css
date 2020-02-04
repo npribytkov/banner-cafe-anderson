@@ -175,6 +175,15 @@ html {
     left: 61%;
 
 }
+.banner .cookie_11{
+    display: inline-block;
+    background: url("../img/cookie_ico_11.png");
+    height: 69px;
+    width: 61px;
+    bottom: 3px;
+    left: 61%;
+
+}
 
 
 @keyframes float {
