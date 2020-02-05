@@ -80,9 +80,14 @@ html {
 .banner .text-block .cookie-block{
     display: inline-block;
 }
-.banner .text-block .cookie-block:hover {
-    animation: wiggle 1s ease-in-out;
+.animate{
+    animation: wiggle-left 6s ease-in-out infinite;
 }
+
+.animate-right{
+    animation: wiggle-right 6s ease-in-out infinite;
+}
+
 .banner .text-block span.cookie{
     position: relative;
     top: 8px;
@@ -90,33 +95,33 @@ html {
     background: url("../img/cookie.png");
     height: 49px;
     width: 48px;
-
 }
 .banner .cookie{
     position: absolute;
-    animation: float 6s ease-in-out infinite;
+
 }
 .banner .cookie_1{
     display: inline-block;
     background: url("../img/cookie_ico_1.png");
     height: 316px;
     width: 962px;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 .banner .cookie_2{
     display: inline-block;
     background: url("../img/cookie_ico_2.png");
     height: 316px;
     width: 962px;
+    top: 8%;
     left: 5%;
-    animation-delay: 2s;
+    animation-delay: 1.3s;
 }
 .banner .cookie_3{
     display: inline-block;
     background: url("../img/cookie_ico_3.png");
     height: 316px;
     width: 962px;
-    animation-delay: 3s;
+    animation-delay: 1.8s;
 }
 .banner .cookie_4{
     display: inline-block;
@@ -125,7 +130,7 @@ html {
     width: 36px;
     left: 66%;
     top: 32%;
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 .banner .cookie_5{
     display: inline-block;
@@ -134,6 +139,7 @@ html {
     width: 46px;
     top: 74%;
     left: 44.5%;
+    animation-delay: 0.1s;
 }
 .banner .cookie_6{
     display: inline-block;
@@ -142,6 +148,7 @@ html {
     width: 124px;
     top: 50%;
     left: 50%;
+    animation-delay: 2s;
 }
 .banner .cookie_7{
     display: inline-block;
@@ -149,6 +156,7 @@ html {
     height: 100px;
     width: 149px;
     left: 50%;
+    animation-delay: 0.4s;
 }
 .banner .cookie_8{
     display: inline-block;
@@ -157,6 +165,7 @@ html {
     width: 40px;
     left: 71%;
     top: 40%;
+    animation-delay: 0.2s;
 }
 .banner .cookie_9{
     display: inline-block;
@@ -165,14 +174,16 @@ html {
     width: 34px;
     left: 68.5%;
     top: 16.8%;
+    animation-delay: 1.5s;
 }
 .banner .cookie_10{
     display: inline-block;
     background: url("../img/cookie_ico_10.png");
     height: 143px;
     width: 212px;
-    bottom: 3px;
+    bottom: -6%;
     left: 61%;
+    animation-delay: 2s;
 
 }
 .banner .cookie_11{
@@ -181,41 +192,90 @@ html {
     height: 69px;
     width: 61px;
     bottom: 3px;
-    left: 61%;
+    left: 49%;
+
+}
+.banner .cookie_12{
+    display: inline-block;
+    background: url("../img/cookie_ico_12.png") no-repeat;
+    height: 69px;
+    width: 61px;
+    top: 5%;
+    left: 29%;
+    animation-delay: 0.2s;
+
+}
+.banner .cookie_13{
+    display: inline-block;
+    background: url("../img/cookie_ico_13.png") no-repeat;
+    height: 69px;
+    width: 61px;
+    top: 62%;
+    left: 39%;
+    animation-delay: 0.7s;
+}
+.banner .cookie_14{
+    display: inline-block;
+    background: url("../img/cookie_ico_14.png") no-repeat;
+    height: 69px;
+    width: 61px;
+    top: 38%;
+    left: 45%;
+    animation-delay: 1s;
+
+}
+.banner .cookie_15{
+    display: inline-block;
+    background: url("../img/cookie_ico_15.png") no-repeat;
+    height: 69px;
+    width: 61px;
+    top: 22%;
+    left: 40%;
+    animation-delay: 0.6s;
+}
+.banner .cookie_16{
+    display: inline-block;
+    background: url("../img/cookie_ico_16.png") no-repeat;
+    height: 69px;
+    width: 61px;
+    top: 46%;
+    left: 41%;
+    animation-delay: 2s;
+}
+.banner .cookie_17{
+    display: inline-block;
+    background: url("../img/cookie_ico_17.png") no-repeat;
+    height: 69px;
+    width: 61px;
+    top: 44%;
+    left: 37%;
+    animation-delay: 1.2s;
 
 }
 
+.cookie.el_2{
+    animation-delay: 0.5s;
+}
 
-@keyframes float {
+@keyframes wiggle-left {
     0% {
-
-        transform: translatey(0px);
+        transform: rotate(0deg);
     }
-    50% {
-
-        transform: translatey(-20px);
+    50%{
+        transform: rotate(-90deg);
     }
+
     100% {
-
-        transform: translatey(0px);
+        transform: rotate(0deg);
     }
 }
 
-@keyframes wiggle {
-    20% {
-        transform: rotate(7deg);
+@keyframes wiggle-right {
+    0% {
+        transform: rotate(0deg);
     }
-
-    40% {
-        transform: rotate(-14deg);
-    }
-
-    60% {
-        transform: rotate(4deg);
-    }
-
-    80% {
-        transform: rotate(-2deg);
+    50%{
+        transform: rotate(90deg);
     }
 
     100% {
