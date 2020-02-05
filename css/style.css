@@ -89,7 +89,7 @@ html {
 }
 
 .animate-hide-show{
-    animation: hide-show 6s ease-in-out infinite;
+    animation: hide-show 4s infinite ease-in-out;
 }
 .banner .text-block span.cookie{
     position: relative;
@@ -224,7 +224,6 @@ html {
     width: 61px;
     top: 38%;
     left: 45%;
-    animation-delay: 1s;
 
 }
 .banner .cookie_15{
@@ -234,7 +233,7 @@ html {
     width: 61px;
     top: 22%;
     left: 40%;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 .banner .cookie_16{
     display: inline-block;
@@ -243,7 +242,7 @@ html {
     width: 61px;
     top: 46%;
     left: 41%;
-    animation-delay:0.5s;
+    animation-delay:2s;
 }
 .banner .cookie_17{
     display: inline-block;
@@ -252,7 +251,8 @@ html {
     width: 61px;
     top: 44%;
     left: 37%;
-    animation-delay: 1.2s;
+    animation-delay: 3s;
+
 
 }
 
